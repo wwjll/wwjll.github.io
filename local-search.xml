@@ -5,10 +5,67 @@
   
   <entry>
     <title></title>
-    <link href="/2023/08/07/cg-math/rotation/"/>
-    <url>/2023/08/07/cg-math/rotation/</url>
+    <link href="/2023/08/07/cg-math/%E5%9B%9B%E5%85%83%E6%95%B0%E4%B8%8E%E6%97%8B%E8%BD%AC%E7%9F%A9%E9%98%B5%E4%BA%92%E7%9B%B8%E8%BD%AC%E6%8D%A2/"/>
+    <url>/2023/08/07/cg-math/%E5%9B%9B%E5%85%83%E6%95%B0%E4%B8%8E%E6%97%8B%E8%BD%AC%E7%9F%A9%E9%98%B5%E4%BA%92%E7%9B%B8%E8%BD%AC%E6%8D%A2/</url>
     
-    <content type="html"><![CDATA[<hr><h3 id="罗德里格斯公式">罗德里格斯公式</h3><!-- ![Rodrigues](https://github.com/wwjll/PublicBlogs/tree/release/source/images/Orthogonal_decomposition_unit_vector_rodrigues_rotation_formula.svg) --><figure><img src="/images/Orthogonal_decomposition_unit_vector_rodrigues_rotation_formula.svg" alt="Rodrigues"><figcaption aria-hidden="true">Rodrigues</figcaption></figure><p><span class="math display">\[E = mc^2\sum \frac{\partial _{}^{}}{\partial x}\]</span></p><h3 id="旋转矩阵">旋转矩阵</h3><h3 id="四元数">四元数</h3>]]></content>
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>cg-math</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/2023/08/07/cg-math/%E5%9B%9B%E5%85%83%E6%95%B0%E6%97%8B%E8%BD%AC/"/>
+    <url>/2023/08/07/cg-math/%E5%9B%9B%E5%85%83%E6%95%B0%E6%97%8B%E8%BD%AC/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>cg-math</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/2023/08/07/cg-math/%E6%AC%A7%E6%8B%89%E8%A7%92%E6%97%8B%E8%BD%AC/"/>
+    <url>/2023/08/07/cg-math/%E6%AC%A7%E6%8B%89%E8%A7%92%E6%97%8B%E8%BD%AC/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>cg-math</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>罗德里格斯旋转公式</title>
+    <link href="/2023/08/07/cg-math/%E7%BD%97%E5%BE%B7%E9%87%8C%E6%A0%BC%E6%96%AF%E6%97%8B%E8%BD%AC%E5%85%AC%E5%BC%8F/"/>
+    <url>/2023/08/07/cg-math/%E7%BD%97%E5%BE%B7%E9%87%8C%E6%A0%BC%E6%96%AF%E6%97%8B%E8%BD%AC%E5%85%AC%E5%BC%8F/</url>
+    
+    <content type="html"><![CDATA[<p>罗德里格斯旋转公式是一个在三维空间 <span class="math inline">\(SO(3)\)</span>给定旋转轴和旋转角度的旋转向量的高效方法，可以方便地转换成矩阵表达。互联网上已经有很多专业的优秀答案，本博推导一下加深印象，图文内容来自<a href="https://en.wikipedia.org/wiki/Rodrigues%27_rotation_formula">wiki</a></p><p><img src="/images/cg-math/Rodrigues-formula.svg" alt="Formula">如上图, <span class="math inline">\(\bf{k}\)</span> 为旋转向量, <span class="math inline">\(\bf{Vrot}\)</span> 为向量 <span class="math inline">\(\bf{v}\)</span> 绕旋转轴（向量）旋转 <span class="math inline">\(\theta\)</span> 角度后的结果</p><p><img src="/images/cg-math/Orthogonal_decomposition_unit_vector_rodrigues_rotation_formula.svg" alt="Rodrigues"> 推导过程：</p><p><span class="math display">\[E = mc^2\]</span></p>]]></content>
     
     
     <categories>
@@ -43,8 +100,8 @@
   
   <entry>
     <title>v2ray 科学上网</title>
-    <link href="/2023/08/07/miscellous/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/V2Ray/"/>
-    <url>/2023/08/07/miscellous/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/V2Ray/</url>
+    <link href="/2023/08/07/miscellous/V2Ray/"/>
+    <url>/2023/08/07/miscellous/V2Ray/</url>
     
     <content type="html"><![CDATA[<h3 id="项目-git-地址">项目 git 地址：</h3><ul><li>服务器 docker ：<a href="https://github.com/wulabing/wulabing_v2ray_docker.git">https://github.com/wulabing/wulabing_v2ray_docker.git</a></li><li>windows 客户端：<a href="https://github.com/2dust/v2rayN/releases">https://github.com/2dust/v2rayN/releases</a></li><li>mac 客户端：<a href="https://github.com/yanue/V2rayU/releases/tag/3.3.0">https://github.com/yanue/V2rayU/releases/tag/3.3.0</a></li></ul><h3 id="服务器安装-v2ray-脚本">服务器安装 v2ray 脚本：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">wget -N --no-check-certificate -q -O install.sh <span class="hljs-string">&quot;&lt;https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh&gt;&quot;</span> &amp;&amp; <span class="hljs-built_in">chmod</span> +x install.sh &amp;&amp; bash install.sh<br></code></pre></td></tr></table></figure><h3 id="云主机">云主机</h3><ul><li>Hostyun , 优惠码（hostyun）: <a href="https://my.hostyun.com/page.aspx?c=login&amp;r=%2fidcsystem.aspx"></a><a href="https://my.hostyun.com">https://my.hostyun.com</a></li></ul><h3 id="域名商">域名商</h3><ul><li>dynadot : <a href="https://www.dynadot.com/account/domain/name/list.html"></a><a href="https://www.dynadot.com/account/domain/name/list.html">https://www.dynadot.com/account/domain/name/list.html</a></li></ul>]]></content>
     
@@ -52,8 +109,6 @@
     <categories>
       
       <category>miscellous</category>
-      
-      <category>科学上网</category>
       
     </categories>
     

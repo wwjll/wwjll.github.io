@@ -16,21 +16,21 @@
   <meta name="author" content="wwjll">
   <meta name="keywords" content="">
   
-    <meta name="description" content="from： https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;50479555 时间复杂度  基本思路  12345678&#x2F;&#x2F; 通过分析每一行的复杂度相加&#x2F;&#x2F; T(n) &#x3D; O(f(n)) &#x3D; O(2n + 1) ≈ O(n)for(i&#x3D;1; i&lt;&#x3D;n; ++i)     &#x2F;&#x2F; f(n) &#x3D; 1&amp;#123;   j &#x3D; i;               &#x2F;&#x2F; f(n) &#x3D;">
+    <meta name="description" content="项目 git 地址：  服务器 docker ：https:&#x2F;&#x2F;github.com&#x2F;wulabing&#x2F;wulabing_v2ray_docker.git windows 客户端：https:&#x2F;&#x2F;github.com&#x2F;2dust&#x2F;v2rayN&#x2F;releases mac 客户端：https:&#x2F;&#x2F;github.com&#x2F;yanue&#x2F;V2rayU&#x2F;releases&#x2F;tag&#x2F;3.3.0  服务器">
 <meta property="og:type" content="article">
-<meta property="og:title" content="时间复杂度和空间复杂度">
-<meta property="og:url" content="https://wwjll.github.io/2023/08/07/algorithm/%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%B6%E7%A9%BA%E5%A4%8D%E6%9D%82%E5%BA%A6/index.html">
+<meta property="og:title" content="v2ray 科学上网">
+<meta property="og:url" content="https://wwjll.github.io/2023/08/07/miscellous/V2Ray/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="from： https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;50479555 时间复杂度  基本思路  12345678&#x2F;&#x2F; 通过分析每一行的复杂度相加&#x2F;&#x2F; T(n) &#x3D; O(f(n)) &#x3D; O(2n + 1) ≈ O(n)for(i&#x3D;1; i&lt;&#x3D;n; ++i)     &#x2F;&#x2F; f(n) &#x3D; 1&amp;#123;   j &#x3D; i;               &#x2F;&#x2F; f(n) &#x3D;">
+<meta property="og:description" content="项目 git 地址：  服务器 docker ：https:&#x2F;&#x2F;github.com&#x2F;wulabing&#x2F;wulabing_v2ray_docker.git windows 客户端：https:&#x2F;&#x2F;github.com&#x2F;2dust&#x2F;v2rayN&#x2F;releases mac 客户端：https:&#x2F;&#x2F;github.com&#x2F;yanue&#x2F;V2rayU&#x2F;releases&#x2F;tag&#x2F;3.3.0  服务器">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-08-07T03:22:59.077Z">
-<meta property="article:modified_time" content="2023-08-02T14:29:15.457Z">
+<meta property="article:modified_time" content="2023-08-07T10:58:05.648Z">
 <meta property="article:author" content="wwjll">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>时间复杂度和空间复杂度 - Hexo</title>
+  <title>v2ray 科学上网 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="时间复杂度和空间复杂度"></span>
+            <span id="subtitle" data-typed-text="v2ray 科学上网"></span>
           
         </div>
 
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          816 words
+          501 words
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          7 mins
+          5 mins
         
       </span>
     
@@ -268,26 +268,27 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">时间复杂度和空间复杂度</h1>
+            <h1 style="display: none">v2ray 科学上网</h1>
             
             
               <div class="markdown-body">
                 
-                <p>from： https://zhuanlan.zhihu.com/p/50479555</p>
-<h2 id="时间复杂度">时间复杂度</h2>
+                <h3 id="项目-git-地址">项目 git 地址：</h3>
 <ul>
-<li>基本思路</li>
+<li>服务器 docker ：<a target="_blank" rel="noopener" href="https://github.com/wulabing/wulabing_v2ray_docker.git">https://github.com/wulabing/wulabing_v2ray_docker.git</a></li>
+<li>windows 客户端：<a target="_blank" rel="noopener" href="https://github.com/2dust/v2rayN/releases">https://github.com/2dust/v2rayN/releases</a></li>
+<li>mac 客户端：<a target="_blank" rel="noopener" href="https://github.com/yanue/V2rayU/releases/tag/3.3.0">https://github.com/yanue/V2rayU/releases/tag/3.3.0</a></li>
 </ul>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs awk"><span class="hljs-regexp">//</span> 通过分析每一行的复杂度相加<br><span class="hljs-regexp">//</span> T(n) = O(f(n)) = O(<span class="hljs-number">2</span>n + <span class="hljs-number">1</span>) ≈ O(n)<br><span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>; i&lt;=n; ++i)     <span class="hljs-regexp">//</span> f(n) = <span class="hljs-number">1</span><br>&#123;<br>   j = i;               <span class="hljs-regexp">//</span> f(n) = n<br>   j++;                 <span class="hljs-regexp">//</span> f(n) = n<br>&#125;<br><br></code></pre></td></tr></table></figure>
+<h3 id="服务器安装-v2ray-脚本">服务器安装 v2ray 脚本：</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">wget -N --no-check-certificate -q -O install.sh <span class="hljs-string">&quot;&lt;https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh&gt;&quot;</span> &amp;&amp; <span class="hljs-built_in">chmod</span> +x install.sh &amp;&amp; bash install.sh<br></code></pre></td></tr></table></figure>
+<h3 id="云主机">云主机</h3>
 <ul>
-<li>常见复杂度算法</li>
+<li>Hostyun , 优惠码（hostyun）: <a target="_blank" rel="noopener" href="https://my.hostyun.com/page.aspx?c=login&amp;r=%2fidcsystem.aspx"></a><a target="_blank" rel="noopener" href="https://my.hostyun.com">https://my.hostyun.com</a></li>
 </ul>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><code class="hljs awk"><span class="hljs-regexp">//</span> O(<span class="hljs-number">1</span>) 没有循环等结构， 复杂度不随某个变量而变化<br>int i = <span class="hljs-number">1</span>;<br>int j = <span class="hljs-number">2</span>;<br>++i;<br>j++;<br>int m = i + j;<br><br><br><span class="hljs-regexp">//</span> O(n) 如上一条所描述<br><br><span class="hljs-regexp">//</span> O(n^<span class="hljs-number">2</span>) 双重循环<br><span class="hljs-keyword">for</span>(x=<span class="hljs-number">1</span>; i&lt;=n; x++)<br>&#123;<br>   <span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>; i&lt;=n; i++)<br>    &#123;<br>       j = i;<br>       j++;<br>    &#125;<br>&#125;<br><br><span class="hljs-regexp">//</span> O(logN), 这个循环需要执行的次数 x = log2^N ≈ O(logN)<br>int i = <span class="hljs-number">1</span>;<br><span class="hljs-keyword">while</span>(i&lt;N)<br>&#123;<br>    i = i * <span class="hljs-number">2</span>;<br>&#125;<br><br><span class="hljs-regexp">//</span> O(nlogN), 复杂度为 logN 的算法循环循环 n 次<br><span class="hljs-keyword">for</span>(m=<span class="hljs-number">1</span>; m&lt;N; m++)<br>&#123;<br>    i = <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">while</span>(i&lt;n)<br>    &#123;<br>        i = i * <span class="hljs-number">2</span>;<br>    &#125;<br>&#125;<br><br><span class="hljs-regexp">//</span> 依此类推<br><br></code></pre></td></tr></table></figure>
-<h2 id="空间复杂度">空间复杂度</h2>
+<h3 id="域名商">域名商</h3>
 <ul>
-<li>基本思想，推算 算法所需的临时空间和变量大小变化的关系</li>
+<li>dynadot : <a target="_blank" rel="noopener" href="https://www.dynadot.com/account/domain/name/list.html"></a><a target="_blank" rel="noopener" href="https://www.dynadot.com/account/domain/name/list.html">https://www.dynadot.com/account/domain/name/list.html</a></li>
 </ul>
-<figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs excel">// 第一行new了一个数组出来，这个数据占用的大小为<span class="hljs-built_in">n</span>，<br>// 这段代码的<span class="hljs-number">2</span>-<span class="hljs-number">6</span>行，虽然有循环，但没有再分配新的空间<br>// S(<span class="hljs-built_in">n</span>) = O(<span class="hljs-built_in">n</span>) <br><span class="hljs-built_in">int</span>[] m = new <span class="hljs-built_in">int</span>[<span class="hljs-built_in">n</span>]<br>for(i=<span class="hljs-number">1</span>; i&lt;=<span class="hljs-built_in">n</span>; ++i)<br>&#123;<br>   j = i;<br>   j++;<br>&#125;<br><br><br>// O(<span class="hljs-number">1</span>) 算法执行所需要的临时空间不随着某个变量<span class="hljs-built_in">n</span>的大小而变化<br><span class="hljs-built_in">int</span> i = <span class="hljs-number">1</span>;<br><span class="hljs-built_in">int</span> j = <span class="hljs-number">2</span>;<br>++i;<br>j++;<br><span class="hljs-built_in">int</span> m = i + j;<br><br><br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -306,7 +307,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/algorithm/" class="category-chain-item">algorithm</a>
+  <a href="/categories/miscellous/" class="category-chain-item">miscellous</a>
   
   
 
@@ -326,8 +327,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>时间复杂度和空间复杂度</div>
-      <div>https://wwjll.github.io/2023/08/07/algorithm/算法的时空复杂度/</div>
+      <div>v2ray 科学上网</div>
+      <div>https://wwjll.github.io/2023/08/07/miscellous/V2Ray/</div>
     </div>
     <div class="license-meta">
       
@@ -371,21 +372,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/08/07/cg-math/%E7%BD%97%E5%BE%B7%E9%87%8C%E6%A0%BC%E6%96%AF%E6%97%8B%E8%BD%AC%E5%85%AC%E5%BC%8F/" title="罗德里格斯旋转公式">
+                      <a href="/2023/08/07/algorithm/%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%B6%E7%A9%BA%E5%A4%8D%E6%9D%82%E5%BA%A6/" title="时间复杂度和空间复杂度">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">罗德里格斯旋转公式</span>
+                        <span class="hidden-mobile">时间复杂度和空间复杂度</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/2023/08/07/miscellous/V2Ray/" title="v2ray 科学上网">
-                        <span class="hidden-mobile">v2ray 科学上网</span>
-                        <span class="visible-mobile">Next</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>

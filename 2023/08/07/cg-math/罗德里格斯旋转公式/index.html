@@ -16,21 +16,24 @@
   <meta name="author" content="wwjll">
   <meta name="keywords" content="">
   
-    <meta name="description" content="from： https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;50479555 时间复杂度  基本思路  12345678&#x2F;&#x2F; 通过分析每一行的复杂度相加&#x2F;&#x2F; T(n) &#x3D; O(f(n)) &#x3D; O(2n + 1) ≈ O(n)for(i&#x3D;1; i&lt;&#x3D;n; ++i)     &#x2F;&#x2F; f(n) &#x3D; 1&amp;#123;   j &#x3D; i;               &#x2F;&#x2F; f(n) &#x3D;">
+    <meta name="description" content="罗德里格斯旋转公式是一个在三维空间 \(SO(3)\) 给定旋转轴和旋转角度的旋转向量的高效方法，可以方便地转换成矩阵表达。互联网上已经有很多专业的优秀答案，本博推导一下加深印象，图文内容来自 wiki  如上图, \(\bf{k}\) 为旋转向量, \(\bf{Vrot}\) 为向量 \(\bf{v}\) 绕旋转轴（向量）旋转 \(\theta\) 角度后的结果  推导过程： \[">
 <meta property="og:type" content="article">
-<meta property="og:title" content="时间复杂度和空间复杂度">
-<meta property="og:url" content="https://wwjll.github.io/2023/08/07/algorithm/%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%B6%E7%A9%BA%E5%A4%8D%E6%9D%82%E5%BA%A6/index.html">
+<meta property="og:title" content="罗德里格斯旋转公式">
+<meta property="og:url" content="https://wwjll.github.io/2023/08/07/cg-math/%E7%BD%97%E5%BE%B7%E9%87%8C%E6%A0%BC%E6%96%AF%E6%97%8B%E8%BD%AC%E5%85%AC%E5%BC%8F/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="from： https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;50479555 时间复杂度  基本思路  12345678&#x2F;&#x2F; 通过分析每一行的复杂度相加&#x2F;&#x2F; T(n) &#x3D; O(f(n)) &#x3D; O(2n + 1) ≈ O(n)for(i&#x3D;1; i&lt;&#x3D;n; ++i)     &#x2F;&#x2F; f(n) &#x3D; 1&amp;#123;   j &#x3D; i;               &#x2F;&#x2F; f(n) &#x3D;">
+<meta property="og:description" content="罗德里格斯旋转公式是一个在三维空间 \(SO(3)\) 给定旋转轴和旋转角度的旋转向量的高效方法，可以方便地转换成矩阵表达。互联网上已经有很多专业的优秀答案，本博推导一下加深印象，图文内容来自 wiki  如上图, \(\bf{k}\) 为旋转向量, \(\bf{Vrot}\) 为向量 \(\bf{v}\) 绕旋转轴（向量）旋转 \(\theta\) 角度后的结果  推导过程： \[">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-08-07T03:22:59.077Z">
-<meta property="article:modified_time" content="2023-08-02T14:29:15.457Z">
+<meta property="og:image" content="https://wwjll.github.io/images/cg-math/Rodrigues-formula.svg">
+<meta property="og:image" content="https://wwjll.github.io/images/cg-math/Orthogonal_decomposition_unit_vector_rodrigues_rotation_formula.svg">
+<meta property="article:published_time" content="2023-08-07T07:50:23.914Z">
+<meta property="article:modified_time" content="2023-08-09T15:53:25.832Z">
 <meta property="article:author" content="wwjll">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://wwjll.github.io/images/cg-math/Rodrigues-formula.svg">
   
   
   
-  <title>时间复杂度和空间复杂度 - Hexo</title>
+  <title>罗德里格斯旋转公式 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +199,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="时间复杂度和空间复杂度"></span>
+            <span id="subtitle" data-typed-text="罗德里格斯旋转公式"></span>
           
         </div>
 
@@ -207,7 +210,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-08-06 19:22" pubdate>
+        <time datetime="2023-08-06 23:50" pubdate>
           August 6, 2023 pm
         </time>
       </span>
@@ -219,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          816 words
+          185 words
         
       </span>
     
@@ -230,7 +233,7 @@
         
         
         
-          7 mins
+          2 mins
         
       </span>
     
@@ -268,26 +271,20 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">时间复杂度和空间复杂度</h1>
+            <h1 style="display: none">罗德里格斯旋转公式</h1>
             
             
               <div class="markdown-body">
                 
-                <p>from： https://zhuanlan.zhihu.com/p/50479555</p>
-<h2 id="时间复杂度">时间复杂度</h2>
-<ul>
-<li>基本思路</li>
-</ul>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs awk"><span class="hljs-regexp">//</span> 通过分析每一行的复杂度相加<br><span class="hljs-regexp">//</span> T(n) = O(f(n)) = O(<span class="hljs-number">2</span>n + <span class="hljs-number">1</span>) ≈ O(n)<br><span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>; i&lt;=n; ++i)     <span class="hljs-regexp">//</span> f(n) = <span class="hljs-number">1</span><br>&#123;<br>   j = i;               <span class="hljs-regexp">//</span> f(n) = n<br>   j++;                 <span class="hljs-regexp">//</span> f(n) = n<br>&#125;<br><br></code></pre></td></tr></table></figure>
-<ul>
-<li>常见复杂度算法</li>
-</ul>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><code class="hljs awk"><span class="hljs-regexp">//</span> O(<span class="hljs-number">1</span>) 没有循环等结构， 复杂度不随某个变量而变化<br>int i = <span class="hljs-number">1</span>;<br>int j = <span class="hljs-number">2</span>;<br>++i;<br>j++;<br>int m = i + j;<br><br><br><span class="hljs-regexp">//</span> O(n) 如上一条所描述<br><br><span class="hljs-regexp">//</span> O(n^<span class="hljs-number">2</span>) 双重循环<br><span class="hljs-keyword">for</span>(x=<span class="hljs-number">1</span>; i&lt;=n; x++)<br>&#123;<br>   <span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>; i&lt;=n; i++)<br>    &#123;<br>       j = i;<br>       j++;<br>    &#125;<br>&#125;<br><br><span class="hljs-regexp">//</span> O(logN), 这个循环需要执行的次数 x = log2^N ≈ O(logN)<br>int i = <span class="hljs-number">1</span>;<br><span class="hljs-keyword">while</span>(i&lt;N)<br>&#123;<br>    i = i * <span class="hljs-number">2</span>;<br>&#125;<br><br><span class="hljs-regexp">//</span> O(nlogN), 复杂度为 logN 的算法循环循环 n 次<br><span class="hljs-keyword">for</span>(m=<span class="hljs-number">1</span>; m&lt;N; m++)<br>&#123;<br>    i = <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">while</span>(i&lt;n)<br>    &#123;<br>        i = i * <span class="hljs-number">2</span>;<br>    &#125;<br>&#125;<br><br><span class="hljs-regexp">//</span> 依此类推<br><br></code></pre></td></tr></table></figure>
-<h2 id="空间复杂度">空间复杂度</h2>
-<ul>
-<li>基本思想，推算 算法所需的临时空间和变量大小变化的关系</li>
-</ul>
-<figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs excel">// 第一行new了一个数组出来，这个数据占用的大小为<span class="hljs-built_in">n</span>，<br>// 这段代码的<span class="hljs-number">2</span>-<span class="hljs-number">6</span>行，虽然有循环，但没有再分配新的空间<br>// S(<span class="hljs-built_in">n</span>) = O(<span class="hljs-built_in">n</span>) <br><span class="hljs-built_in">int</span>[] m = new <span class="hljs-built_in">int</span>[<span class="hljs-built_in">n</span>]<br>for(i=<span class="hljs-number">1</span>; i&lt;=<span class="hljs-built_in">n</span>; ++i)<br>&#123;<br>   j = i;<br>   j++;<br>&#125;<br><br><br>// O(<span class="hljs-number">1</span>) 算法执行所需要的临时空间不随着某个变量<span class="hljs-built_in">n</span>的大小而变化<br><span class="hljs-built_in">int</span> i = <span class="hljs-number">1</span>;<br><span class="hljs-built_in">int</span> j = <span class="hljs-number">2</span>;<br>++i;<br>j++;<br><span class="hljs-built_in">int</span> m = i + j;<br><br><br></code></pre></td></tr></table></figure>
+                <p>罗德里格斯旋转公式是一个在三维空间 <span class="math inline">\(SO(3)\)</span>
+给定旋转轴和旋转角度的旋转向量的高效方法，可以方便地转换成矩阵表达。互联网上已经有很多专业的优秀答案，本博推导一下加深印象，图文内容来自
+<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Rodrigues%27_rotation_formula">wiki</a></p>
+<p><img src="/images/cg-math/Rodrigues-formula.svg" srcset="/img/loading.gif" lazyload alt="Formula">
+如上图, <span class="math inline">\(\bf{k}\)</span> 为旋转向量, <span class="math inline">\(\bf{Vrot}\)</span> 为向量 <span class="math inline">\(\bf{v}\)</span> 绕旋转轴（向量）旋转 <span class="math inline">\(\theta\)</span> 角度后的结果</p>
+<p><img src="/images/cg-math/Orthogonal_decomposition_unit_vector_rodrigues_rotation_formula.svg" srcset="/img/loading.gif" lazyload alt="Rodrigues"> 推导过程：</p>
+<p><span class="math display">\[
+E = mc^2
+\]</span></p>
 
                 
               </div>
@@ -306,7 +303,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/algorithm/" class="category-chain-item">algorithm</a>
+  <a href="/categories/cg-math/" class="category-chain-item">cg-math</a>
   
   
 
@@ -326,8 +323,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>时间复杂度和空间复杂度</div>
-      <div>https://wwjll.github.io/2023/08/07/algorithm/算法的时空复杂度/</div>
+      <div>罗德里格斯旋转公式</div>
+      <div>https://wwjll.github.io/2023/08/07/cg-math/罗德里格斯旋转公式/</div>
     </div>
     <div class="license-meta">
       
@@ -371,9 +368,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/08/07/cg-math/%E7%BD%97%E5%BE%B7%E9%87%8C%E6%A0%BC%E6%96%AF%E6%97%8B%E8%BD%AC%E5%85%AC%E5%BC%8F/" title="罗德里格斯旋转公式">
+                      <a href="/2023/08/07/cg-math/%E6%AC%A7%E6%8B%89%E8%A7%92%E6%97%8B%E8%BD%AC/" title="">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">罗德里格斯旋转公式</span>
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -381,8 +378,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/08/07/miscellous/V2Ray/" title="v2ray 科学上网">
-                        <span class="hidden-mobile">v2ray 科学上网</span>
+                      <a href="/2023/08/07/algorithm/%E7%AE%97%E6%B3%95%E7%9A%84%E6%97%B6%E7%A9%BA%E5%A4%8D%E6%9D%82%E5%BA%A6/" title="时间复杂度和空间复杂度">
+                        <span class="hidden-mobile">时间复杂度和空间复杂度</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -439,6 +436,12 @@
 
 
   
+
+
+  
+  
+
+
 
 
 
@@ -632,6 +635,49 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
